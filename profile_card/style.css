@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --primary-color: #f2726a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(45deg, #008532, #50c878);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins";
+}
+.card {
+  height: 400px;
+  width: 320px;
+  background-color: #242628;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  margin: 30px;
+}
+.card_img {
+  margin: 0px auto;
+  width: 120px;
+  height: 120px;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translateY(25px);
+  transition: 0.5s;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+.card h2 {
+  margin-top: 35px;
+  color: white;
+}
+.card p {
+  margin-top: 5px;
+  color: var(--primary-color);
+  height: 42px;
+  font-size: 14px;
+  padding: 0 15px;
+}
+.card_social {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 40px; /*tạo khoảng cách các icon*/
+  margin-top: 20px;
+}
+.card_social a {
+  color: white;
+}
+.card_social a:hover {
+  color: var(--primary-color);
+}
+
+.card_button {
+  margin-top: 40px;
+  color: white;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.card_button:hover {
+  background: #f2726a;
+}
+
+.card_img:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: unset;
+  transform: unset;
+  border: none;
+}
